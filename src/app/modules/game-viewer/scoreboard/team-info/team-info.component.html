@@ -1,0 +1,44 @@
+<div class="row m-0 justify-content-start"
+  [ngClass]="{'flex-row-reverse': !positiveHalf}">
+  <div 
+    class="col-sm-2 align-self-center text-center">
+    <h1>{{ info.score }}</h1>
+  </div>
+  <div class="col-sm-3 align-self-center text-center">
+    <h5
+      class="rounded py-2"
+      [ngStyle]="{'border': ('2px solid ' + color)}">{{ info.name }}</h5>
+  </div>
+  <div class="col-sm-1">
+    <table>
+      <tbody>
+        <tr>
+          <td>
+            <strong class="text-warning">{{ info.yellowCards }}</strong>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <strong class="text-danger">{{ info.redCards }}</strong>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="col-sm-2">
+    <table>
+        <tbody>
+          <tr>
+            <td>
+              <strong class="text-info">{{ info.timeouts }}</strong>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <strong class="text-secondary">{{ info.timeoutTime }}</strong>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+  </div>
+</div>

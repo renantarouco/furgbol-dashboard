@@ -1,3 +1,15 @@
-<p>
-  scoreboard works!!!!
-</p>
+<div class="row">
+  <div class="col-sm-6">
+    <app-team-info
+      [info]="blueInfo"
+      [color]="'blue'"
+      [positiveHalf]="blueTeamOnPositiveHalf">
+    </app-team-info>
+  </div>
+  <div class="col-sm-6">
+    <app-team-info
+      [info]="yellowInfo"
+      [color]="'yellow'"
+      [positiveHalf]="!blueTeamOnPositiveHalf"></app-team-info>
+  </div>
+</div>
