@@ -1,11 +1,11 @@
 {
-  "name": "angular-electron",
+  "name": "furgbol-dashboard",
   "version": "6.0.1",
   "description": "Angular 8 with Electron (Typescript + SASS + Hot Reload)",
-  "homepage": "https://github.com/maximegris/angular-electron",
+  "homepage": "https://github.com/furgbol/furgbol-dashboard",
   "author": {
-    "name": "Maxime GRIS",
-    "email": "maxime.gris@gmail.com"
+    "name": "Renan Tarouco da Fonseca",
+    "email": "renantarouco@gmail.com"
   },
   "keywords": [
     "angular",
@@ -55,6 +55,7 @@
     "@types/jasminewd2": "2.0.3",
     "@types/mocha": "5.2.6",
     "@types/node": "8.9.4",
+    "bootstrap": "^4.3.1",
     "chai": "4.2.0",
     "codelyzer": "5.0.1",
     "conventional-changelog-cli": "2.0.11",

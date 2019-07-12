@@ -5,7 +5,7 @@ import { Routes, RouterModule } from '@angular/router';
 const routes: Routes = [
     {
         path: '',
-        component: HomeComponent
+        loadChildren: './modules/game-viewer/game-viewer.module#GameViewerModule'
     }
 ];
 
