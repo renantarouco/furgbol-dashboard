@@ -16,7 +16,6 @@ export class TeamInfoComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    console.log(this.color);
   }
 
 }
