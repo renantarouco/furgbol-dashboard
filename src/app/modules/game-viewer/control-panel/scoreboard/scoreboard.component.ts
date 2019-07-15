@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { TeamInfo } from '../../../interfaces/team-info';
+import { TeamInfo } from '../../../../interfaces/team-info';
 
 @Component({
   selector: 'app-scoreboard',
