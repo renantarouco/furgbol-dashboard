@@ -1,6 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 
 import { TeamInfo } from '../../../../interfaces/team-info';
+import { ElectronService } from '../../../../providers/electron.service';
 
 @Component({
   selector: 'app-teams-info',
@@ -13,9 +14,14 @@ export class TeamsInfoComponent implements OnInit {
   @Input() color: string;
   @Input() positiveHalf: boolean;
 
-  constructor() { }
+  constructor(private electronService: ElectronService) { }
 
   ngOnInit() {
+    this.electronService.ws.subscribe(
+      msg => { console.log(msg); },
+      err => { console.error(err); },
+      () => { console.log("completed"); }
+    );
   }
 
 }

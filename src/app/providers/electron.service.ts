@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { webSocket, WebSocketSubject } from 'rxjs/webSocket';
 
 // If you import a module but never use any of the imported values other than as TypeScript types,
 // the resulting javascript file will look as if you never imported the module at all.
@@ -14,6 +15,8 @@ export class ElectronService {
   remote: typeof remote;
   childProcess: typeof childProcess;
   fs: typeof fs;
+
+  public ws: WebSocketSubject<string> = webSocket("ws://localhost:9002");
 
   constructor() {
     // Conditional imports
