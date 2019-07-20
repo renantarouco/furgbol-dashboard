@@ -16,8 +16,6 @@ export class ElectronService {
   childProcess: typeof childProcess;
   fs: typeof fs;
 
-  public ws: WebSocketSubject<string> = webSocket("ws://localhost:9002");
-
   constructor() {
     // Conditional imports
     if (this.isElectron()) {

@@ -1,6 +1,10 @@
 <div class="row justify-content-center">
   <div class="col-sm-12">
-    <app-scoreboard></app-scoreboard>
+    <app-scoreboard
+      [blueName]="blueInfo.name"
+      [blueScore]="blueInfo.score"
+      [yellowName]="yellowInfo.name"
+      [yellowScore]="yellowInfo.score"></app-scoreboard>
   </div>
 </div>
 <hr class="my-4" />

@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { RefereeService } from '../../providers/referee.service';
+import { Observable } from 'rxjs';
+import { Referee } from '../../interfaces/referee';
 
 @Component({
   selector: 'app-game-viewer',
@@ -7,9 +10,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GameViewerComponent implements OnInit {
 
-  constructor() { }
+  public referee$: Observable<Referee>;
+
+  constructor(
+    private refereeService: RefereeService
+  ) { }
 
   ngOnInit() {
+    this.referee$ = this.refereeService.referee$;
   }
 
 }
